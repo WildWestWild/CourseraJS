@@ -28,7 +28,6 @@ emitter
         this.logs.push('Добавлена новая нотификация. Количество - ' + notifications.counter);
     })
     .emit('new_notification');
-
 // Проверяем количество нотификаций
 assert.equal(notifications.counter, 1, 'Получена одна нотификация');
 
